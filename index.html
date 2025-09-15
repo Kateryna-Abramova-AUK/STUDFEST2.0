@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AUK Student IT Fest 2025">
+    <meta name="keywords" content="Student IT Fest, 2025, AUK, Olympiad Programming Club, Hackathon, AUK Olympiad Programming Club, Student IT Fest 2025, AUK Olympiad Programming Club Student IT Fest 2025">
+    <meta name="author" content="Olympiad Programming Club of AUK">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="google-site-verification" content="google-site-verification=google-site-verification">
+    <title>STUDFEST25</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Landing section with background -->
+    <section class="landing" id="home">
+        <header class="header">
+            <div class="header-content">
+                <div class="brand">
+                    <img src="images/logo.png" alt="Student Fest Logo" class="header-logo-image">
+<!--                    <div class="logo">SF</div>-->
+                    <h1>Hackaton</h1>
+                </div>
+
+                <nav class="header-nav">
+                    <a href="#home" data-en="Home" data-ua="Головна">Home</a>
+                    <a href="#aboutID" data-en="About" data-ua="Про нас">About</a>
+                    <a href="#timeline" data-en="Agenda" data-ua="Розклад">Activities</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="btn btn-ghost header-btn" id="language-toggle" onclick="toggleLanguage()">EN / UA</button>
+                    <a href="https://forms.gle/hRkNo3yBW2gQYS1c9" target="_blank" class="btn btn-primary header-btn" data-en="Register Now" data-ua="Зареєструватись">Register Now</a>
+                </div>
+            </div>
+    </header>
+
+        <div class="hero-content">
+            <div>
+                <h1 class="main-title" data-en="Student IT Fest 2025" data-ua="Студентський IT Фестиваль 2025">Student IT Fest 2025</h1>
+                <p class="hero-subtitle" data-en="Student-organised IT festival for students of Ukraine. Join us and let's create something amazing together!" data-ua="IT-фестиваль, організований студентами для студентів України. Приєднуйся — давай створимо щось неймовірне разом!">
+                    Student-organised IT festival for students of Ukraine. Join us and let's create something amazing together!
+                </p>
+                <div class="hero-dates">
+                    <p class="event-dates" data-en="27 October - 8 November 2025" data-ua="27 Жовтня - 8 Листопада 2025">27 October - 8 November 2025</p>
+                    <p class="event-location" data-en="Kyiv, Ukraine" data-ua="Київ, Україна">Kyiv, Ukraine</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="aboutID" class="section section-light">
+        <div class="container">
+            <h2 class="section-title" data-en="About Us" data-ua="Про нас">About Us</h2>
+            <p class="section-subtitle" data-en="We are Olympiad Programming Club at AUK and we are passionate about creating and improving. We wanted to create an opportunity for students to learn and grow together." data-ua="Ми — Клуб олімпіадного програмування при AUK, і ми захоплюємося створенням та вдосконаленням. Ми прагнули створити можливість для студентів навчатися та зростати разом.">
+                We are Olympiad Programming Club at AUK and we are passionate about creating and improving. We wanted to create an opportunity for students to learn and grow together.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🚀</span>
+                    <h3 class="feature-title" data-en="Practice & Compete" data-ua="Практикуйтеся та змагайтеся">Practice & Compete</h3>
+                    <p class="feature-description" data-en="Take part in educational lectures, hackathons, and coding challenges to test your skills and compete with others." data-ua="Беріть участь у лекціях, хакатонах та челенджах, щоб протестувати свої навички та змагатися з іншими.">
+                        Take part in educational lectures, hackathons, and coding challenges to test your skills and compete with others.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🤝</span>
+                    <h3 class="feature-title" data-en="Innovative Community" data-ua="Інновативна Спільнота">Innovative Community</h3>
+                    <p class="feature-description" data-en="Explore fresh ideas, share your vision, and collaborate with like-minded individuals." data-ua="Досліджуйте нові ідеї, діліться своїм баченням та співпрацюйте з однодумцями.">
+                        Explore fresh ideas, share your vision, and collaborate with like-minded individuals.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🎯</span>
+                    <h3 class="feature-title" data-en="Goal-Oriented Focus" data-ua="Орієнтція на результат">Goal-Oriented Focus</h3>
+                    <p class="feature-description" data-en="Work towards your goals with clear objectives and a supportive community.." data-ua="Працюйте над своїми цілями з підтримкою спільноти.">
+                        Work towards your goals with clear objectives and a supportive community.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section">
+        <div class="container">
+            <h2 class="section-title" data-en="Event Timeline" data-ua="Розклад Подій">Event Timeline</h2>
+            <p class="section-subtitle" data-en="All the lecture days will be held from 17.00 to 19.35. Hackathon days will be held from 11.00 to 20.00" data-ua="Усі лекційні дні проходитимуть з 15:00 або 16:00 до 19:30. Хакатонні дні проходитимуть з 11:00 до 20:00.">
+                All the lecture days will be held from 15.00 or 16.00 to 19.30. Hackathon days will be held from 11.00 to 20.00.
+            </p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date" data-en="October 27" data-ua="27 Жовтня">October 27</div>
+                    <div class="timeline-content" data-en="Software Engineering Day  - take part in vibe-coding talks, and networking sessions with industry professionals from EPAM and EMPAT." data-ua="Software Engineering Day - візьміть участь у vibe-coding воркшопах та сесіях нетворкінгу з професіоналами з EPAM та EMPAT">
+                        Software Engineering Day - Take part in vibe-coding workshops and networking sessions with industry professionals from EPAM, SoftServe, and Genesis.
+                        <div class="timeline-actions">
+                            <a href="#" class="btn btn-primary timeline-btn toggle-schedule" data-en="More" data-ua="Більше" data-en-hide="Hide" data-ua-hide="Сховати">More</a>
+                        </div>
+                        <div class="schedule-container" id="oct27-schedule">
+                            <ul class="schedule-list" data-en>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">15:00-15:55</span>
+                                    <span class="schedule-description">Melnychenko Yaroslav - </span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">16:00-17:00</span>
+                                    <span class="schedule-description">Kuprianov Ivan - Why code is not the main thing: soft skills for a developer</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">17:00-17:30</span>
+                                    <span class="schedule-description">Coffee-Break</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">17:30-18:30</span>
+                                    <span class="schedule-description">Borodavko Sergii - From idea to product</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">18:30-19:30</span>
+                                    <span class="schedule-description">Grynov Denys - What does a student need to know to get into an internship at EPAM</span>
+                                </li>
+                            </ul>
+                            <ul class="schedule-list" data-ua style="display: none;">
+                                <li class="schedule-item">
+                                    <span class="schedule-time">15:00-15:55</span>
+                                    <span class="schedule-description">Ярослав Мельниченко —</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">16:00-17:00</span>
+                                    <span class="schedule-description">Іван Купрянов — Чому код — не головне: soft skills для розробника</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">17:00-17:30</span>
+                                    <span class="schedule-description">Кава-брейк</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">17:30-18:30</span>
+                                    <span class="schedule-description">Сергій Бородавко — Від ідеї до продукту</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">18:30-19:30</span>
+                                    <span class="schedule-description">Денис Гриньов — Що потрібно знати студенту, щоб потрапити на інтернатуру в EPAM</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date" data-en="October 29" data-ua="29 Жовтня">October 29</div>
+                    <div class="timeline-content" data-en="Data Science Day - explore LLM Driven Applications and Data Analysis with workshops and expert talks." data-ua="Data Science Day - досліджуйте програми, що базуються на LLM та аналіз даних з воркшопами та експертними доповідями.">
+                        Data Science Day - Explore LLM Driven Applications and Data Analysis with hands-on workshops and expert talks.
+                        <div class="timeline-actions">
+                            <a href="#" class="btn btn-primary timeline-btn toggle-schedule" data-en="More" data-ua="Більше" data-en-hide="Hide" data-ua-hide="Сховати">More</a>
+                        </div>
+                        <div class="schedule-container" id="oct29-schedule">
+                            <ul class="schedule-list" data-en>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">16:00-17:00</span>
+                                    <span class="schedule-description">Lection 1</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">17:00-18:00</span>
+                                    <span class="schedule-description">Antonishin Mihail - Analytics in cybersecurity</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">18:00-19:00</span>
+                                    <span class="schedule-description">Lection 3</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">19:00-19:30</span>
+                                    <span class="schedule-description">Coffee-Break</span>
+                                </li>
+                            </ul>
+                            <ul class="schedule-list" data-ua style="display: none;">
+                                <li class="schedule-item">
+                                    <span class="schedule-time">16:00-17:00</span>
+                                    <span class="schedule-description">Лекція 1</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">17:00-18:00</span>
+                                    <span class="schedule-description">Михайло Антонішин — Аналітика в кібербезпеці</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">18:00-19:00</span>
+                                    <span class="schedule-description">Лекція 3</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">19:00-19:30</span>
+                                    <span class="schedule-description">Кава-брейк</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date" data-en="October 31" data-ua="31 Жовтня">October 31</div>
+                    <div class="timeline-content" data-en="Digital Design Day - dive into UI/UX Design Applications with interactive sessions and expert insights." data-ua="Digital Design Day - зануртеся у програми UI/UX дизайну з інтерактивними сесіями та експертними інсайтами.">
+                        Digital Design Day - Dive into UI/UX Design Applications with interactive sessions and expert insights.
+                        <div class="timeline-actions">
+                            <a href="#" class="btn btn-primary timeline-btn toggle-schedule" data-en="More" data-ua="Більше" data-en-hide="Hide" data-ua-hide="Сховати">More</a>
+                        </div>
+                        <div class="schedule-container" id="oct31-schedule">
+                            <ul class="schedule-list" data-en>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">15:00-16:00</span>
+                                    <span class="schedule-description">Tsabanov Andrii —</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">16:00-17:00</span>
+                                    <span class="schedule-description">Metelova Olena — Visual metaphors in design of interests</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">17:00-17:30</span>
+                                    <span class="schedule-description">Coffee-Break</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">17:30-18:30</span>
+                                    <span class="schedule-description">Zavydovska Larysa — Artificial Intelligence and Tailwind CSS</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">18:30-19:30</span>
+                                    <span class="schedule-description">Seriohin Sergii — Soft skills for a designer</span>
+                                </li>
+                            </ul>
+
+                            <ul class="schedule-list" data-ua style="display: none;">
+                                <li class="schedule-item">
+                                    <span class="schedule-time">15:00-16:00</span>
+                                    <span class="schedule-description">Андрій Цабанов —</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">16:00-17:00</span>
+                                    <span class="schedule-description">Олена Метельова — Візуальні метафори у дизайні інтересів</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">17:00-17:30</span>
+                                    <span class="schedule-description">Кава-брейк</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">17:30-18:30</span>
+                                    <span class="schedule-description">Лариса Завидовська — Штучний інтелект та Tailwind CSS</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">18:30-19:30</span>
+                                    <span class="schedule-description">Сергій Серьогін — Софт скіли для дизайнера</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date" data-en="November 7" data-ua="7 Листопада">November 7</div>
+                    <div class="timeline-content" data-en="Hackathon Day 1 - Kickoff & task solving. Start your hackathon journey with project brainstorming." data-ua="День 1 Хакатону - Початок та розв'язання завдань. Розпочніть свою хакатонну подорож з мозкового штурму проектів та розіграшем призів за донати.">
+                        Hackathon Day 1 - Kickoff & task solving. Start your hackathon journey with project brainstorming and prize draw for donations.
+                        <div class="timeline-actions">
+                            <a href="#" class="btn btn-primary timeline-btn toggle-schedule" data-en="More" data-ua="Більше" data-en-hide="Hide" data-ua-hide="Сховати">More</a>
+                        </div>
+                        <div class="schedule-container" id="nov7-schedule">
+                            <ul class="schedule-list" data-en>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">11:00-11:30</span>
+                                    <span class="schedule-description">Teams arriving</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">11:30-12:00</span>
+                                    <span class="schedule-description">Final preparing + Tasks explaining</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">12:00-15:00</span>
+                                    <span class="schedule-description">Solving the task</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">15:00-16:00</span>
+                                    <span class="schedule-description">Lunch</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">16:00-19:00</span>
+                                    <span class="schedule-description">Solving the task</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">19:00-20:00</span>
+                                    <span class="schedule-description">Prize draw for donations + Networking</span>
+                                </li>
+                            </ul>
+
+                            <ul class="schedule-list" data-ua style="display: none;">
+                                <li class="schedule-item">
+                                    <span class="schedule-time">11:00-11:30</span>
+                                    <span class="schedule-description">Прибуття команд</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">11:30-12:00</span>
+                                    <span class="schedule-description">Фінальні приготування + Пояснення завдань</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">12:00-15:00</span>
+                                    <span class="schedule-description">Вирішення завдання</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">15:00-16:00</span>
+                                    <span class="schedule-description">Обід</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">16:00-19:00</span>
+                                    <span class="schedule-description">Вирішення завдання</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">19:00-20:00</span>
+                                    <span class="schedule-description">Розіграш призів за донати + Нетворкінг</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date" data-en="November 8" data-ua="8 Листопада">November 8</div>
+                    <div class="timeline-content" data-en="Hackathon Day 2 & Award Ceremony - Celebrate achievements at an ceremony with networking and opportunities." data-ua="День 2 Хакатону та Церемонія Нагородження - Святкуйте досягнення на церемонії з нетворкінгом та можливостями.">
+                        Hackathon Day 2 & Award Ceremony - Celebrate achievements at a ceremony with networking and opportunities.
+                        <div class="timeline-actions">
+                            <a href="#" class="btn btn-primary timeline-btn toggle-schedule" data-en="More" data-ua="Більше" data-en-hide="Hide" data-ua-hide="Сховати">More</a>
+                        </div>
+                        <div class="schedule-container" id="nov8-schedule">
+                            <ul class="schedule-list" data-en>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">11:00-11:30</span>
+                                    <span class="schedule-description">Teams arriving</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">11:30-12:00</span>
+                                    <span class="schedule-description">Final preparing</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">12:00-15:00</span>
+                                    <span class="schedule-description">Solving the task</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">15:00-16:00</span>
+                                    <span class="schedule-description">Lunch</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">16:00-18:00</span>
+                                    <span class="schedule-description">Solving the task</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">18:00-19:00</span>
+                                    <span class="schedule-description">Presenting projects</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">19:00-20:00</span>
+                                    <span class="schedule-description">Award and Closing Ceremony</span>
+                                </li>
+                            </ul>
+
+                            <ul class="schedule-list" data-ua style="display: none;">
+                                <li class="schedule-item">
+                                    <span class="schedule-time">11:00-11:30</span>
+                                    <span class="schedule-description">Прибуття команд</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">11:30-12:00</span>
+                                    <span class="schedule-description">Фінальні приготування</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">12:00-15:00</span>
+                                    <span class="schedule-description">Вирішення завдання</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">15:00-16:00</span>
+                                    <span class="schedule-description">Обід</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">16:00-18:00</span>
+                                    <span class="schedule-description">Вирішення завдання</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">18:00-19:00</span>
+                                    <span class="schedule-description">Презентація проєктів</span>
+                                </li>
+                                <li class="schedule-item">
+                                    <span class="schedule-time">19:00-20:00</span>
+                                    <span class="schedule-description">Церемонія нагородження та закриття</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3 class="footer-title" data-en="Student IT Fest 2025" data-ua="Студентський IT Фестиваль 2025">Student IT Fest 2025</h3>
+            <p class="footer-text"><a href="mailto:sofiia.viazovska@auk.edu.ua" target="_blank">sofiia.viazovska@auk.edu.ua</a> <a href="mailto:kateryna.abramova@auk.edu.ua" target="_blank">kateryna.abramova@auk.edu.ua</a></p>
+            <p class ="footer-text" data-en="Kyiv, Ukraine" data-ua="Київ, Україна">Kyiv, Ukraine</p>
+            <p class ="footer-text" data-en="© 2025 Olympiad Programming Club at AUK. All rights reserved." data-ua="© 2025 Олімпіадний Клуб Програмування при АЮК. Всі права захищені.">© 2025 Olympiad Programming Club at AUK. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Language toggle functionality
+        function toggleLanguage() {
+            const toggle = document.getElementById('language-toggle');
+            const elements = document.querySelectorAll('[data-en][data-ua]');
+            const currentLang = document.documentElement.lang || 'en';
+
+            const newLang = currentLang === 'en' ? 'ua' : 'en';
+            document.documentElement.lang = newLang;
+            toggle.textContent = newLang === 'en' ? 'EN / UA' : 'UA / EN';
+
+            elements.forEach(el => {
+                // Check if this is a timeline-content element or has child elements with data attributes
+                if (el.classList.contains('timeline-content')) {
+                    // For timeline-content, only update the text node directly inside it
+                    // First, get all child nodes
+                    const childNodes = Array.from(el.childNodes);
+
+                    // Find the text node (it's usually the first one)
+                    const textNode = childNodes.find(node => node.nodeType === Node.TEXT_NODE);
+
+                    if (textNode) {
+                        // Update only the text node
+                        textNode.nodeValue = el.getAttribute(`data-${newLang}`);
+                    }
+                } else {
+                    // For other elements, use the original approach
+                    el.textContent = el.getAttribute(`data-${newLang}`);
+                }
+            });
+
+            // Toggle visibility of schedule lists based on language
+            document.querySelectorAll('.schedule-list').forEach(list => {
+                if (list.hasAttribute(`data-${newLang}`)) {
+                    list.style.display = '';
+                } else {
+                    list.style.display = 'none';
+                }
+            });
+
+            // Update toggle button text based on current state and language
+            document.querySelectorAll('.toggle-schedule').forEach(button => {
+                const scheduleContainer = button.closest('.timeline-content').querySelector('.schedule-container');
+                if (scheduleContainer.classList.contains('active')) {
+                    button.textContent = button.getAttribute(`data-${newLang}-hide`);
+                } else {
+                    button.textContent = button.getAttribute(`data-${newLang}`);
+                }
+            });
+
+            localStorage.setItem('preferredLanguage', newLang);
+        }
+
+        // Load saved language preference
+        window.addEventListener('load', function() {
+            const savedLang = localStorage.getItem('preferredLanguage');
+            if (savedLang && savedLang !== 'en') {
+                toggleLanguage();
+            }
+
+            // Initialize schedule toggle buttons
+            initScheduleToggles();
+        });
+
+        // Initialize schedule toggle functionality
+        function initScheduleToggles() {
+            document.querySelectorAll('.toggle-schedule').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    // Find the closest schedule container
+                    const scheduleContainer = this.closest('.timeline-content').querySelector('.schedule-container');
+
+                    // Toggle the active class
+                    scheduleContainer.classList.toggle('active');
+
+                    // Update button text based on state
+                    const lang = document.documentElement.lang || 'en';
+                    if (scheduleContainer.classList.contains('active')) {
+                        this.textContent = this.getAttribute(`data-${lang}-hide`);
+                    } else {
+                        this.textContent = this.getAttribute(`data-${lang}`);
+                    }
+                });
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (!this.classList.contains('toggle-schedule')) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Add scroll event to toggle .scrolled class on header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 10) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
