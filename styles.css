@@ -435,6 +435,7 @@
             color: var(--slate-gray);
             line-height: 1.7;
             font-weight: 400;
+            white-space: pre-line;
         }
 
         /* Timeline */
@@ -698,6 +699,63 @@
 
         .feature-card:nth-child(2) { animation-delay: 0.1s; }
         .feature-card:nth-child(3) { animation-delay: 0.2s; }
+        .feature-card:nth-child(4) { animation-delay: 0.3s; }
+        .feature-card:nth-child(5) { animation-delay: 0.4s; }
+        .feature-card:nth-child(6) { animation-delay: 0.5s; }
+        .feature-card:nth-child(7) { animation-delay: 0.6s; }
+        .feature-card:nth-child(8) { animation-delay: 0.7s; }
+        .feature-card:nth-child(9) { animation-delay: 0.8s; }
+        .feature-card:nth-child(10) { animation-delay: 0.9s; }
+        .feature-card:nth-child(11) { animation-delay: 1.0s; }
+        .feature-card:nth-child(12) { animation-delay: 1.1s; }
+
+        /* Lector cards specific styling */
+        #lectors .features-grid {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--space-lg);
+        }
+
+        #lectors .feature-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        #lectors .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--space-xl);
+            /* Make the icon container circular */
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: var(--shadow-soft);
+            border: 2px solid var(--light-violet);
+            color: var(--primary-violet);
+            transition: all 0.3s ease;
+        }
+
+        #lectors .feature-icon:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-elegant);
+            border-color: var(--primary-red);
+        }
+
+        #lectors .lector-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        #lectors .feature-title {
+            margin-bottom: var(--space-sm);
+        }
 
         .btn-ghost:focus,
         .btn-ghost:active,
