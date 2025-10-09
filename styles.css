@@ -819,6 +819,25 @@
             margin-bottom: var(--space-sm);
         }
 
+        /* LinkedIn icon styling */
+        .linkedin-link {
+            margin-top: var(--space-md);
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .linkedin-icon {
+            width: 24px;
+            height: 24px;
+            fill: var(--primary-violet);
+            transition: all 0.3s ease;
+        }
+
+        .linkedin-link:hover .linkedin-icon {
+            fill: var(--primary-red);
+            transform: scale(1.2);
+        }
+
         .btn-ghost:focus,
         .btn-ghost:active,
         .btn:focus,
