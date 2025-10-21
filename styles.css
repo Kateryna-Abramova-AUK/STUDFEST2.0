@@ -815,6 +815,16 @@
             border-radius: 50%;
         }
 
+        /* Specific adjustments for Kotelevets's photo */
+        #lectors img[alt="Kotelevets Kyrylo"] {
+            object-position: center 30%;
+        }
+
+        /* Change background color for Kotelevets's photo container */
+        #lectors .kotelevets-icon {
+            background-color: rgba(220, 210, 255, 0.7); /* lighter violet with opacity */
+        }
+
         #lectors .feature-title {
             margin-bottom: var(--space-sm);
         }
