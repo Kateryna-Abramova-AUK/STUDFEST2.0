@@ -102,7 +102,7 @@
                 <div class="timeline-item">
                     <div class="timeline-date" data-en="October 27" data-ua="27 Жовтня">October 27</div>
                     <div class="timeline-content" data-en="Software Engineering Day  - take part in vibe-coding talks, and networking sessions with industry professionals from EPAM and EMPAT." data-ua="Software Engineering Day - візьміть участь у vibe-coding воркшопах та сесіях нетворкінгу з професіоналами з EPAM та EMPAT">
-                        Software Engineering Day - Take part in vibe-coding workshops and networking sessions with industry professionals from EPAM, SoftServe, and Genesis.
+                        Software Engineering Day - Take part in vibe-coding workshops and networking sessions with industry professionals from EPAM, SoftServe, and Genesis. <a href="https://www.youtube.com/@AmericanUniversityKyiv/videos" target="_blank" class="day-link" data-en="Watch live stream" data-ua="Дивитися трансляцію">Watch live stream</a>
                         <div class="timeline-actions">
                             <a href="#" class="btn btn-primary timeline-btn toggle-schedule" data-en="More" data-ua="Більше" data-en-hide="Hide" data-ua-hide="Сховати">More</a>
                         </div>
@@ -159,7 +159,7 @@
                 <div class="timeline-item">
                     <div class="timeline-date" data-en="October 29" data-ua="29 Жовтня">October 29</div>
                     <div class="timeline-content" data-en="Data Science Day - explore LLM Driven Applications and Data Analysis with workshops and expert talks." data-ua="Data Science Day - досліджуйте програми, що базуються на LLM та аналіз даних з воркшопами та експертними доповідями.">
-                        Data Science Day - Explore LLM Driven Applications and Data Analysis with hands-on workshops and expert talks.
+                        Data Science Day - Explore LLM Driven Applications and Data Analysis with hands-on workshops and expert talks. <a href="https://www.youtube.com/@AmericanUniversityKyiv/videos" target="_blank" class="day-link" data-en="Watch live stream" data-ua="Дивитися трансляцію">Watch live stream</a>
                         <div class="timeline-actions">
                             <a href="#" class="btn btn-primary timeline-btn toggle-schedule" data-en="More" data-ua="Більше" data-en-hide="Hide" data-ua-hide="Сховати">More</a>
                         </div>
@@ -215,7 +215,7 @@
                 <div class="timeline-item">
                     <div class="timeline-date" data-en="October 31" data-ua="31 Жовтня">October 31</div>
                     <div class="timeline-content" data-en="Digital Design Day - dive into UI/UX Design Applications with interactive sessions and expert insights." data-ua="Digital Design Day - зануртеся у програми UI/UX дизайну з інтерактивними сесіями та експертними інсайтами.">
-                        Digital Design Day - Dive into UI/UX Design Applications with interactive sessions and expert insights.
+                        Digital Design Day - Dive into UI/UX Design Applications with interactive sessions and expert insights. <a href="https://www.youtube.com/@AmericanUniversityKyiv/videos" target="_blank" class="day-link" data-en="Watch live stream" data-ua="Дивитися трансляцію">Watch live stream</a>
                         <div class="timeline-actions">
                             <a href="#" class="btn btn-primary timeline-btn toggle-schedule" data-en="More" data-ua="Більше" data-en-hide="Hide" data-ua-hide="Сховати">More</a>
                         </div>
@@ -273,7 +273,7 @@
                 <div class="timeline-item">
                     <div class="timeline-date" data-en="November 7" data-ua="7 Листопада">November 7</div>
                     <div class="timeline-content" data-en="Hackathon Day 1 - Kickoff & task solving. Start your hackathon journey with project brainstorming." data-ua="День 1 Хакатону - Початок та розв'язання завдань. Розпочніть свою хакатонну подорож з мозкового штурму проектів та розіграшем призів за донати.">
-                        Hackathon Day 1 - Kickoff & task solving. Start your hackathon journey with project brainstorming and prize draw for donations.
+                        Hackathon Day 1 - Kickoff & task solving. Start your hackathon journey with project brainstorming and prize draw for donations. <a href="https://www.youtube.com/watch?v=example4" target="_blank" class="day-link" data-en="Watch live stream" data-ua="Дивитися трансляцію">Watch live stream</a>
                         <div class="timeline-actions">
                             <a href="#" class="btn btn-primary timeline-btn toggle-schedule" data-en="More" data-ua="Більше" data-en-hide="Hide" data-ua-hide="Сховати">More</a>
                         </div>
@@ -339,7 +339,7 @@
                 <div class="timeline-item">
                     <div class="timeline-date" data-en="November 8" data-ua="8 Листопада">November 8</div>
                     <div class="timeline-content" data-en="Hackathon Day 2 & Award Ceremony - Celebrate achievements at an ceremony with networking and opportunities." data-ua="День 2 Хакатону та Церемонія Нагородження - Святкуйте досягнення на церемонії з нетворкінгом та можливостями.">
-                        Hackathon Day 2 & Award Ceremony - Celebrate achievements at a ceremony with networking and opportunities.
+                        Hackathon Day 2 & Award Ceremony - Celebrate achievements at a ceremony with networking and opportunities. <a href="https://www.youtube.com/watch?v=example4" target="_blank" class="day-link" data-en="Watch live stream" data-ua="Дивитися трансляцію">Watch live stream</a>
                         <div class="timeline-actions">
                             <a href="#" class="btn btn-primary timeline-btn toggle-schedule" data-en="More" data-ua="Більше" data-en-hide="Hide" data-ua-hide="Сховати">More</a>
                         </div>
@@ -644,6 +644,23 @@
                         // Update only the text node
                         textNode.nodeValue = el.getAttribute(`data-${newLang}`);
                     }
+                } else if (el.querySelector('svg')) {
+                    // Special case for elements with SVG icons (like the translation button)
+                    // Preserve the SVG and only update the text node
+                    const svg = el.querySelector('svg');
+                    const text = el.lastChild;
+
+                    // Clear the element
+                    el.innerHTML = '';
+
+                    // Add back the SVG
+                    el.appendChild(svg);
+
+                    // Add a space after the SVG
+                    el.appendChild(document.createTextNode(' '));
+
+                    // Add the translated text
+                    el.appendChild(document.createTextNode(el.getAttribute(`data-${newLang}`)));
                 } else {
                     // For other elements, use the original approach
                     el.textContent = el.getAttribute(`data-${newLang}`);
