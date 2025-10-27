@@ -98,6 +98,7 @@
             border-radius: var(--radius-elegant);
             box-shadow: var(--shadow-elegant);
             padding: var(--space-sm) var(--space-md);
+            overflow: hidden;
         }
 
         .header-content {
@@ -182,6 +183,7 @@
             transition: all 0.3s ease;
             position: relative;
             transition: color 0.3s;
+            overflow: hidden; /* ensure underline/pseudo elements clip to rounded corners */
         }
         .header.scrolled .header-nav a {
             color: #000000;
